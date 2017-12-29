@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+	<!-- <div ng-app="myApp" ng-controller="myCtrl">
+		名字：<input ng-model="name">
+		<h1>你输入了：{{name}}</h1>
+	</div>
+	<script type="text/javascript">
+		var app = angular.module("myApp",[]);
+		app.controller("myCtrl",function($scope){
+			$scope.name = "John Doe"
+		});
+	</script>
+	<p>使用ng-model指令来绑定输入域到控制器的属性</p> -->
+	<h1>验证用户输入</h1>
+	<form ng-app="" name="myForm">
+		Email:
+		<input type="email" name="myAddress" ng-model="text">
+		<span ng-show="myForm.myAddress.$error.email">不是一个合法的邮箱地址</span>
+	</form>
+</body>
+</html>
