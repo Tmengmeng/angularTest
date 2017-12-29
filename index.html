@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no"/>
+<title>掌萌</title>
+<link rel="stylesheet" href="css/base.css"/>
+<script type="text/javascript" src="js/adaptive.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //nav
+        $(".menu-a").click(function(){
+          $(".nav").stop().slideToggle(500);
+        });
+    })
+</script>  
+</head>
+<body>
+<div class="moball">
+    <div class="header">
+        <a class="menu-a"><img src="img/Menu-icon.png"/></a>
+        <div class="logo"><span>云南大白菜</span></div>
+        <a class="me-a" href="menber/menber.html"><img alt="" src="img/Me-icon.png"></a>
+    </div>
+    <div class="nav">
+        <font></font>
+        <a href="index.html">首页</a>
+        <a href="all.html">咨询</a>
+        <a href="sale.html">萌友</a>
+        <a href="top.html">电竞</a>
+        <a href="brand.html">商城</a>
+        <a href="brand.html">战绩</a>
+    </div>
+    <div class="header-nbsp"></div>
+    <div class="indexbanner">
+    <div class="slide_01" id="slide_01">
+        <div class="mod_01"><a href=""><img src="img/Test-product.jpg" ></a></div>
+        <div class="mod_01"><a href=""><img src="img/Test-product.jpg" ></a></div>
+        <div class="mod_01"><a href=""><img src="img/Test-product.jpg" ></a></div>
+    </div>
+    <div class="dotModule_new">
+        <div id="slide_01_dot"></div>
+    </div>
+</div>
+    <script type="text/javascript" src="js/srcoll.js"></script>
+    <script type="text/javascript">
+    //轮播图
+    $('.mod_01').css('width',document.body.offsetWidth);
+    if(document.getElementById("slide_01")){
+    var slide_01 = new ScrollPic();
+    slide_01.scrollContId   = "slide_01"; //内容容器ID
+    slide_01.dotListId      = "slide_01_dot";//点列表ID
+    slide_01.dotOnClassName = "selected";
+    slide_01.frameWidth     = document.body.offsetWidth;
+    slide_01.pageWidth      = document.body.offsetWidth;
+    slide_01.upright        = false;
+    slide_01.speed          = 10;
+    slide_01.space          = 30;
+    slide_01.initialize(); //初始化
+    }
+    </script>
+    <div class="indexnav">
+        <a href="all.html"><img src="img/Nav-icon-01.png" /><font>资讯</font></a>
+        <a href="sale.html"><img src="img/Nav-icon-02.png" /><font>萌友</font></a>
+        <a href="top.html"><img src="img/Nav-icon-03.png" /><font>电竞</font></a>
+        <a href="brand.html"><img src="img/Nav-icon-04.png" /><font>商城</font></a>
+        <a href="brand.html"><img src="img/Nav-icon-03.png" /><font>战绩</font></a>
+    </div>
+    <div class="sall">
+        <ul>
+            <a href="details.html">
+                <li>
+                    <div class="sall-pic"><img src="img/Test-product.jpg" /></div>
+                    <div class="sall-right">
+                        <div class="sall-tit">LPL携手一路向北2017全球总决赛半决赛即将打响</div>
+                        <div class="sall-dec"><span>官方赛事中心</span><span class="read">4244.9万阅</span></div>
+                    </div>
+                </li>
+            </a>
+            <a href="details.html">
+                <li>
+                    <div class="sall-pic"><img src="img/Test-product.jpg" /></div>
+                    <div class="sall-right">
+                        <div class="sall-tit">撸在囧途：爆笑gif图再次来袭，来自C9的打扰了</div>
+                        <div class="sall-dec"><span>大花儿</span><span class="read">1.3万阅</span></div>
+                    </div>
+                </li>
+            </a>
+            <a href="details.html">
+                <li>
+                    <div class="sall-pic"><img src="img/Test-product.jpg" /></div>
+                    <div class="sall-right">
+                        <div class="sall-tit">撸在囧途：爆笑gif图再次来袭，来自C9的打扰了</div>
+                        <div class="sall-dec"><span>大花儿</span><span class="read">1.3万阅</span></div>
+                    </div>
+                </li>
+            </a>
+            <a href="details.html">
+                <li>
+                    <div class="sall-pic"><img src="img/Test-product.jpg" /></div>
+                    <div class="sall-right">
+                        <div class="sall-tit">撸在囧途：爆笑gif图再次来袭，来自C9的打扰了</div>
+                        <div class="sall-dec"><span>大花儿</span><span class="read">1.3万阅</span></div>
+                    </div>
+                </li>
+            </a>
+            <a href="details.html">
+                <li>
+                    <div class="sall-pic"><img src="img/Test-product.jpg" /></div>
+                    <div class="sall-right">
+                        <div class="sall-tit">撸在囧途：爆笑gif图再次来袭，来自C9的打扰了</div>
+                        <div class="sall-dec"><span>大花儿</span><span class="read">1.3万阅</span></div>
+                    </div>
+                </li>
+            </a>
+        </ul>
+        <a class="sall-more">查看更多...</a>
+    </div>
+    <div class="footer">
+        <div class="bottomnav">
+            <a href="all.html">全部商品</a>
+            <em>|</em>
+            <a href="info.html">关于我们</a>
+            <em>|</em>
+            <a href="info.html">客服热线</a>
+            <em>|</em>
+            <a href="login.html">帮助中心</a>
+        </div>
+        <div class="bottominfo">
+            <p>© 2017-2888 掌萌网站版权所有，并保留所有权利</p>
+            <p>渝ICP备150088447654321号</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
